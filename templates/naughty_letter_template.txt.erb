@@ -8,7 +8,7 @@ I've been watching you all year. Mostly by hacking into the camera of your Smart
 
 I can forgive a lot but when you <%= infraction %> it was the last straw. If it were up to me, you'd get nothing. In fact, I'd take back that Furby I got you last year. But Mrs. Claus insisted that I bring you something on your list. So you're getting the <%= gift_toy %>. But I'm making sure it's from the defect pile.
 
-As for the Synthesizer, Bear, Skates, Sorry and Transformers: Better luck next year.
+As for the <% toys.each do |toy| %><% next unless toy != toys.last %><%= toy + ", "%><% end %>and <%= toys.last %>: Better luck next year.
 
 Remember – I'll be watching you.
 
